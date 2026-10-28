@@ -1,0 +1,29 @@
+{
+  "name": "civicfix-ai",
+  "version": "1.0.0",
+  "description": "CivicFix AI — Local-First Civic Complaint Agent AI/ML Module",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./errors": "./src/errors.js",
+    "./schemas": "./src/schemas.js"
+  },
+  "scripts": {
+    "test": "node --test tests/unit.test.js",
+    "test:integration": "node --test tests/integration.test.js",
+    "test:all": "node --test tests/unit.test.js tests/integration.test.js",
+    "example": "node examples/backend-adapter.js"
+  },
+  "keywords": [
+    "civicfix",
+    "ollama",
+    "gemma4",
+    "tool-calling",
+    "local-ai",
+    "agent"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
